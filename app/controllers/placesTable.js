@@ -18,7 +18,7 @@ $.winTable.addEventListener('open', function () {
             if (e.success) {
                 if (e.places.length == 0) {
                     $.table.setData([
-                        { title: 'No place marked!' }
+                        { title: 'No places marked!' }
                     ]);
                 }
                 else {
@@ -35,8 +35,9 @@ $.winTable.addEventListener('open', function () {
                     // or
                     for (var i = 0, l = e.places.length; i < l; i++) {
                     	
+                    	e.places[i].address = e.places[i].address || ' ';
                     	var label = Ti.UI.createLabel({
-                    		text: e.places[i].name + ' -- ' + e.places[i].address,
+                    		text: e.places[i].name + ' - ' + e.places[i].address,
                     		left:5
                     	});
                     	var tvr = Ti.UI.createTableViewRow({
@@ -68,9 +69,8 @@ $.table.addEventListener('click', function (evt) {
          	Ti.API.info('#### ' + evt.row.latitude + '  ' + evt.row.longitude)
  
         	NAVIBRIDGE.addPOI({ 
-        		 // title: seems not to work...
     			 lat: evt.row.latitude, 
-   			lon: evt.row.longitude
+   				 lon: evt.row.longitude,
 				});
         }
     }); 
@@ -85,6 +85,10 @@ $.table.addEventListener('delete', function(e){
 	};
 });
 });
+
+
+
+
 
 
 
