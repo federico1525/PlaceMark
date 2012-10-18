@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container">
+		<View id="content">
+			<View id="logincnt">
+				<TextField id="username"></TextField>
+				<TextField id="password" hintText="Your password" passwordMask="true"></TextField>
+			</View>
+			<Button id="login">Click to Login</Button>
+			<Button id="signup">Signup</Button>
+			<ImageView id="image"></ImageView>
+		</View>
+	</Window>
+</Alloy>

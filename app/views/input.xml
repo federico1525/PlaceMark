@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container" id="inputWindow" fullscreen=false>
+		<View id="content">
+			<View id="inputForm">
+				<TextField id="nameField"></TextField>
+				<TextField id="descriptionField"></TextField>
+<!-- 				<Picker id="descriptionField"></Picker> -->
+				<Button id="button">Mark your Place!</Button>
+				<Button id="openTable">My Places</Button>
+				<Button id="logout">Logout</Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

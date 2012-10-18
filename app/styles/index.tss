@@ -1,0 +1,35 @@
+".container": {
+	backgroundColor:"white"
+},
+"#username": {
+	top:5,
+	hintText:"Username",
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	width:'80%',
+	height:30
+},
+"#password": {
+	top:45,
+	hintText:"Your password",
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	width:'80%',
+	height:30,
+	passwordMask:true,
+},
+"#login": {
+	top:100,
+	width:200,
+	height:50,
+	color:'#336699'
+},
+"#signup": {
+	top: 180,
+	width:200,
+	height:50,
+	color:'#336699'
+},
+
+
+

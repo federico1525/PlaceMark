@@ -1,0 +1,21 @@
+".container": {
+	backgroundColor: "black"
+},
+"#topView": {
+	top: 0,
+	height:30,
+	backgroundColor: "black"
+},
+"#back": {
+	text:"Back",
+	left:10,
+	color:"white"
+},
+"#table": {
+	top:30,
+	bottom:2,
+	left: 2,
+	right : 2,
+	editable:true
+},
+

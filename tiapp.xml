@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">IU9b8ntgF1mPBwY3LFnQWJiXUJxjOfab</property>
+    <property name="acs-oauth-key-production" type="string">tWTxo3KBLGh2cj09T1mpXeu32OULeLLU</property>
+    <property name="acs-api-key-production" type="string">H8jClD1u8HYBWv34pc8c0XYoBkTfPiv5</property>
+    <property name="acs-oauth-secret-development" type="string">atGg7WGB98uIi1wuiYRr6IaZCYO7l5tf</property>
+    <property name="acs-oauth-key-development" type="string">ucuw8CsOIDQLnyw5GdWMV5x2oc5LU1cu</property>
+    <property name="acs-api-key-development" type="string">oREvsM6wWJGkwqkew6KmkVs0hFk6GMyH</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.3.GA</sdk-version>
+    <id>com.appcelerator.naviapp.federico</id>
+    <name>PlaceMarks</name>
+    <version>1.0</version>
+    <publisher>fcasali</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2012 by fcasali</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>8345360c-5ba6-4502-9679-a4c4ed7eaa62</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+        <module platform="android" version="2.0.7">ti.cloudpush</module>
+        <module platform="commonjs" version="1.0.2">ti.navibridge</module>
+    <module platform="android" version="1.0">ti.physicalSizeCategory</module>
+</modules>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>

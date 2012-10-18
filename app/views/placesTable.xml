@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container" id="winTable" fullscreen=false>
+		<View id="content">
+			<View id="topView">
+				<Label id="back"></Label>
+			</View>
+			<TableView id="table"></TableView>
+		</View>
+	</Window>
+</Alloy>

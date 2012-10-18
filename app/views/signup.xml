@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" id="signupWindow" fullscreen=false>
+		<View id="content">
+			<View id="signupForm">
+				<TextField id="username"></TextField>
+				<TextField id="password"></TextField>
+				<TextField id="confirmPassword"></TextField>
+			</View>
+			<Button id="signup">Signup</Button>
+			<Button id="back">Back to Login</Button>
+		</View>
+	</Window>
+</Alloy>
