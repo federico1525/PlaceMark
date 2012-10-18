@@ -42,7 +42,7 @@ $.winTable.addEventListener('open', function () {
                     	var tvr = Ti.UI.createTableViewRow({
                             // title: e.places[i].name,
                             height:40,
-                            name: e.places[i].name
+                            name: e.places[i].name,
                             id: e.places[i].id,
                             latitude: e.places[i].latitude,
                             longitude: e.places[i].longitude,
