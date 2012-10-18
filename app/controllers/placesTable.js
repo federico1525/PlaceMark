@@ -68,9 +68,9 @@ $.table.addEventListener('click', function (evt) {
          	Ti.API.info('#### ' + evt.row.latitude + '  ' + evt.row.longitude)
  
         	NAVIBRIDGE.addPOI({ 
-        		 title: evt.row.name,
+        		 // title: seems not to work...
     			 lat: evt.row.latitude, 
-   				 lon: evt.row.longitude
+   			lon: evt.row.longitude
 				});
         }
     }); 
