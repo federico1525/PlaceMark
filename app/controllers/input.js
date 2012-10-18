@@ -2,7 +2,7 @@ var Cloud = require('ti.cloud');
 
 var lat, lon;
 
-(function getLocation(e) {
+function getLocation(e) {
 
 	Ti.Geolocation.locationServicesEnabled = true;
 	Ti.Geolocation.purpose = 'Bookmark places!';
@@ -17,7 +17,7 @@ var lat, lon;
 		lon = e.coords.longitude;
 		lat = e.coords.latitude;
 	});
-})();
+};
 
 $.nameField.addEventListener('focus', function(){
 	$.nameField.value = ''
@@ -27,7 +27,11 @@ $.descriptionField.addEventListener('focus', function(){
 });
 
 
+
 function markPlace(evt) {
+	
+	getLocation();
+	
 	var nameField = $.nameField.value;
 	var addressField = $.descriptionField.value;
 
@@ -37,13 +41,13 @@ function markPlace(evt) {
 	Ti.API.info('#### ' + nameField + '  ' + addressField);
 	
 	if ($.nameField.value){
-		addressField = addressField || '';
+		addressField = addressField || ' ';
 		(function submitForm() {
 			Cloud.Places.create({
 				name : nameField,
 				address : addressField,
 				latitude : lat.toString(),
-                		longitude : lon.toString(),
+                longitude : lon.toString(),
 				// city: city.value,
 				// state: state.value,
 				// postal_code: postalCode.value
