@@ -42,8 +42,8 @@ function markPlace(evt) {
 			Cloud.Places.create({
 				name : nameField,
 				address : addressField,
-				latitude : lat,
-				longitude : lon,
+				latitude : lat.toString(),
+                		longitude : lon.toString(),
 				// city: city.value,
 				// state: state.value,
 				// postal_code: postalCode.value
