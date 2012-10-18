@@ -1,1 +1,14 @@
-Basic "Hello, World!" application using the Alloy MVC framework.
+PlaceMark
+
+
+The App works like a 'bookmark my place' app - the idea is that when a user is going/moving around might wants to quickly and simply add as a Bookmark the place where he is staying - not necessarily a pub, a restaurant or a gas station. Then you can easily see where you've been, save the bookmarks as favorites on the Navicon or just go quickly reach them (for example - let's add this great low cost gas station or even my home, so everywhere I am I can really easily set the navigator). 
+
+User just open the app - login or create a user if it's the first time, bookmarks the place by entering a name (or whatever he wants) add a description/category (optional) and the App capture his latitude/longitude and save it to ACS. 
+Clicking on 'my places' button the user can see a table view with all his bookmarks (taken from ACS server) - by clicking on one of those the Navicon module is triggered, displaying the place on the map. Sliding the finger to the right in the Table View the user can delete his bookmarks from server.
+
+Area of Improvements: the graphics of course! There is almost no graphic now.  Also I wish to change the description/categories with a drop down and specific colors.
+Further step would also be to add multiple pins to the map. 
+
+
+Issues found: sometimes happened that when bookmarking a place an 'Oauth error' s thrown. There is a bug relative to passing thw latitude or longitude values. Probably an ACS bug in case the value is too long, but I'm investigating.
+For example, with a 'longitude' value of -122.40641784667969  it's not working (but just by removing a few numbers it is). So I'm investigating.
