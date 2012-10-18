@@ -43,7 +43,7 @@ function markPlace(evt) {
 				name : nameField,
 				address : addressField,
 				latitude : lat,
-				longitude : -120,
+				longitude : lon,
 				// city: city.value,
 				// state: state.value,
 				// postal_code: postalCode.value
