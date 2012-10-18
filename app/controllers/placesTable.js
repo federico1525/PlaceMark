@@ -18,7 +18,7 @@ $.winTable.addEventListener('open', function () {
             if (e.success) {
                 if (e.places.length == 0) {
                     $.table.setData([
-                        { title: 'No places marked!' }
+                        { title: 'No place marked!' }
                     ]);
                 }
                 else {
