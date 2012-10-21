@@ -12,4 +12,4 @@ Further step would also be to add multiple pins to the map.
 
 Issues found: sometimes happened that when bookmarking a place an 'Oauth error' s thrown. There is a bug relative to passing thw latitude or longitude values. Probably an ACS bug in case the value is too long, but I'm investigating.
 For example, with a 'longitude' value of -122.40641784667969  it's not working (but just by removing a few numbers it is). So I'm investigating.
-UPDATE: workaround applied passing coordinates as strings (using toString() method). It looks like an ACS bug - logging a Jira.
+UPDATE: workaround applied passing coordinates as strings (using toString() method). It looks like an ACS bug - logged a Jira: http://jira.appcelerator.org/browse/CLOUDSRV-1564
